@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: rgb(28 25 23);
+  --secondary-color: rgb(68 64 60);
+  --secondary-text-color: rgb(168 162 158);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.container .the-side-bar {
+  width: 300px;
+  height: calc(100vh - 80px);
+  border-radius: 0 20px 20px 0;
+  background-color: var(--primary-color);
+  padding: 20px;
+  padding-top: 50px;
+  text-align: center;
+}
+.container .the-side-bar h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.container .the-side-bar button {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--secondary-text-color);
+  border-radius: 6px;
+}
+.container .the-side-bar button:hover {
+  color: white;
+  background-color: rgb(87 83 78);
+}
+
+.container .the-side-bar ul {
+  display: block;
+  width: 100%;
+}
+.container .the-side-bar ul li {
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 2px 0;
+  color: var(--secondary-text-color);
+  transition-duration: 0.5s;
+}
+.container .the-side-bar ul li:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: white;
+}
+
+.container .main-space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding-top: 100px;
+}
+
+.container .main-space img {
+  width: 80px;
+  padding-bottom: 25px;
+}
+
+.container .main-space h1 {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+.container .main-space p {
+  padding-bottom: 25px;
+  color: var(--secondary-text-color);
+}
+.container .main-space button {
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.container .main-space button:hover {
+  color: white;
+  background-color: rgb(87 83 78);
+}
+.input-container {
+  width: 600px;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+}
+.input-container .control {
+  width: 100%;
+  text-align: right;
+  font-size: 18px;
+}
+.input-container .control .save-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin: 0 20px;
+}
+.input-container .control .save-btn:hover {
+  background-color: black;
+}
+.input-container .control .cancel-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.input-container .control .cancel-btn:hover {
+  background-color: #eee;
+}
+
+.input-container label {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-weight: 18px;
+  color: rgb(120 113 108);
+  padding-bottom: 5px;
+}
+
+.input-container input {
+  width: 100%;
+  background-color: #eee;
+  margin-bottom: 20px;
+  border-bottom: solid 2px #c2c2c2;
+  padding: 5px;
+  outline: none;
+}
+.input-container input:focus {
+  border-bottom: solid 2px var(--secondary-color);
+}
+.show-task {
+  width: 60%;
+  padding: 60px 30px 0;
+}
+.show-task header .task-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-task header .task-name p {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.show-task header .task-name span {
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 10px 15px;
+}
+.show-task header .task-name span:hover {
+  background-color: #eee;
+  color: red;
+}
+.show-task header .date {
+  color: var(--secondary-text-color);
+}
+.show-task header .description {
+  padding: 10px 0;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.show-task .task h2 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.show-task .task h2 .add-task-input {
+  margin-bottom: 20px;
+}
+.show-task .task input {
+  width: 300px;
+  padding: 5px;
+  margin-right: 15px;
+  outline: none;
+  background-color: #eee;
+  transition: 0.2s;
+}
+.show-task .task span {
+  cursor: pointer;
+  padding: 10px 15px;
+}
+.show-task .task span:hover {
+  border-radius: 6px;
+  background-color: #eee;
+}
+.show-task .task p {
+  margin-top: 10px;
+}
+.show-task .task ul {
+  margin: 20px 0;
+}
+.show-task .task ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.show-task .task ul li span {
+  color: red;
+}
+.alert {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 6px;
+}
+.alert h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin: 10px 0;
+}
+.alert p {
+  color: var(--secondary-color);
+  margin: 18px 0;
+  font-size: 16px;
+}
+.alert form {
+  float: right;
+  padding: 10px 20px;
+  background-color: rgb(87 83 78);
+  width: fit-content;
+  color: var(--secondary-text-color);
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.alert form button {
+  outline: none;
+}
