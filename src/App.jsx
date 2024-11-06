@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import CreateProjectPage from "./assets/components/CreateProjectPage";
 import TheSideBar from "./assets/components/theSideBar";
-import AddProjectDetails from "./assets/components/addProjectDetails";
+import AddProjectDetails from "./assets/components/AddProjectDetails";
 import ShowTask from "./assets/components/ShowTask";
 
 let InitialProjectsArr = [];
